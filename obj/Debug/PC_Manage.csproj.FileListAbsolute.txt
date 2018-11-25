@@ -1,0 +1,12 @@
+D:\C#_project\PC_Manage\PC_Manage\bin\Debug\PC_Manage.exe.config
+D:\C#_project\PC_Manage\PC_Manage\bin\Debug\PC_Manage.exe
+D:\C#_project\PC_Manage\PC_Manage\bin\Debug\PC_Manage.pdb
+D:\C#_project\PC_Manage\PC_Manage\obj\Debug\PC_Manage.csprojAssemblyReference.cache
+D:\C#_project\PC_Manage\PC_Manage\obj\Debug\PC_Manage.Properties.Resources.resources
+D:\C#_project\PC_Manage\PC_Manage\obj\Debug\PC_Manage.csproj.GenerateResource.cache
+D:\C#_project\PC_Manage\PC_Manage\obj\Debug\PC_Manage.csproj.CoreCompileInputs.cache
+D:\C#_project\PC_Manage\PC_Manage\obj\Debug\PC_Manage.exe
+D:\C#_project\PC_Manage\PC_Manage\obj\Debug\PC_Manage.pdb
+D:\C#_project\PC_Manage\PC_Manage\obj\Debug\PC_Manage.Form1.resources
+D:\C#_project\PC_Manage\PC_Manage\obj\Debug\PC_Manage.nameChange.resources
+D:\C#_project\PC_Manage\PC_Manage\obj\Debug\PC_Manage.pcSetting.resources
