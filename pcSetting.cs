@@ -31,9 +31,9 @@ namespace PC_Manage
         {
             try
             {
-                if (total < 0)
+                if (total <= 0)
                 {
-                    System.Windows.Forms.MessageBox.Show("숫자를 정해주세요!", "미입력", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //System.Windows.Forms.MessageBox.Show("숫자를 정해주세요!", "미입력", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     throw new Exception("공백 입력");
                 }
                 else

@@ -34,14 +34,22 @@ namespace PC_Manage
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (changeValue.Length > 0)
+            try
             {
-                mainForm.setName(changeValue);
-                Application.DoEvents(); //즉시 변경
+                if (changeValue.Length > 0)
+                {
+                    mainForm.setName(changeValue);
+                    Application.DoEvents(); //즉시 변경
+                }
+                else if (changeValue.Length == 0)
+                {
+                    throw new Exception("이름을 입력하세요");
+                   // MessageBox.Show("이름을 입력해주세요!", "경고", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
-            else if(changeValue.Length == 0)
+            catch
             {
-                MessageBox.Show("이름을 입력해주세요!","경고", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("이름을 입력해주세요!", "경고", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             this.Close();   //창 닫기
         }
