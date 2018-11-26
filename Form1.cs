@@ -7,13 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace PC_Manage
 {
     public partial class Form1 : Form
     {
-        Button[] pc;   //PC방 자리들
-        
+        //Button[] pc;   //PC방 자리들
+        List<Button> pc = new List<Button>();
+
         public Form1()
         {
             InitializeComponent();
@@ -53,10 +55,18 @@ namespace PC_Manage
         
         public void setPC(int total)
         {
-            this.pc = new Button[total];   //pc개만큼 생성
-            for(int i = 0; i < total; i++)
+            //this.pc = new Button[total];   //pc개만큼 생성
+            if (pc.Count >= 1)  //pc에 내용이 있을 경우
+            {   //버튼을 전부 삭제하고 리스트 내용을 초기화
+                for (int i= 0; i < pc.Count; i++){ 
+                    pc[i].Dispose();
+                }
+                pc.Clear();
+            }
+            for (int i = 0; i < total; i++)
             {
-                pc[i] = new Button();
+                //pc[i] = new Button();
+                pc.Add(new Button());
                 pc[i].Text = (i+1).ToString();
                 pc[i].Size = new Size(35, 35);
                 pc[i].Location = new Point((i % 10) * 35+180, ((i / 10) * 35)+50);

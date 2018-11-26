@@ -29,10 +29,25 @@ namespace PC_Manage
 
         private void button1_Click(object sender, EventArgs e)
         {
-            mainForm.setTotal(this.total);
-            mainForm.setPC(total);
-            Application.DoEvents(); //즉시 변경
-            this.Close();   //창 닫기
+            try
+            {
+                if (total < 0)
+                {
+                    System.Windows.Forms.MessageBox.Show("숫자를 정해주세요!", "미입력", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    throw new Exception("공백 입력");
+                }
+                else
+                {
+                    mainForm.setTotal(this.total);
+                    mainForm.setPC(total);
+                    Application.DoEvents(); //즉시 변경
+                }
+            }
+            catch
+            {
+                System.Windows.Forms.MessageBox.Show("숫자를 정해주세요!","미입력",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+                this.Close();   //창 닫기
         }
 
         private void label1_Click(object sender, EventArgs e)

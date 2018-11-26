@@ -52,9 +52,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("나눔바른고딕", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(56, 10);
+            this.label1.Location = new System.Drawing.Point(55, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 38);
+            this.label1.Size = new System.Drawing.Size(200, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "이름 없음";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -83,7 +83,7 @@
             // 
             this.presentSpace.AutoSize = true;
             this.presentSpace.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.presentSpace.Location = new System.Drawing.Point(771, 177);
+            this.presentSpace.Location = new System.Drawing.Point(759, 177);
             this.presentSpace.Name = "presentSpace";
             this.presentSpace.Size = new System.Drawing.Size(23, 28);
             this.presentSpace.TabIndex = 3;
