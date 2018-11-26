@@ -31,6 +31,7 @@ namespace PC_Manage
         {
             try
             {
+                total = int.Parse(textBox1.Text);
                 if (total <= 0)
                 {
                     //System.Windows.Forms.MessageBox.Show("숫자를 정해주세요!", "미입력", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -40,14 +41,20 @@ namespace PC_Manage
                 {
                     mainForm.setTotal(this.total);
                     mainForm.setPC(total);
-                    Application.DoEvents(); //즉시 변경
+                   // Application.DoEvents(); //즉시 변경
                 }
             }
-            catch
+            /*
+            catch (ArgumentNullException)
             {
-                System.Windows.Forms.MessageBox.Show("숫자를 정해주세요!","미입력",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show("숫자를 적어주세요!", "미입력 오류", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-                this.Close();   //창 닫기
+            */
+            catch (FormatException)
+            {
+                MessageBox.Show("숫자를 입력해주세요!", "입력 오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            this.Close();   //창 닫기
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -57,7 +64,7 @@ namespace PC_Manage
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            total = int.Parse(textBox1.Text);
+            //total = int.Parse(textBox1.Text);
         }
     }
 }

@@ -39,7 +39,7 @@ namespace PC_Manage
                 if (changeValue.Length > 0)
                 {
                     mainForm.setName(changeValue);
-                    Application.DoEvents(); //즉시 변경
+                    //Application.DoEvents(); //즉시 변경
                 }
                 else if (changeValue.Length == 0)
                 {
